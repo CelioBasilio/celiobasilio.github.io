@@ -38,19 +38,20 @@ readLessBtn.forEach(button => {
 });
 
 
-  // Esse código será executado quando o modal for aberto
-document.addEventListener('DOMContentLoaded', function() {
-  // Adicionar o evento de click para os links de cursos
-  const links = document.querySelectorAll('a[data-bs-toggle="modal"]');
+document.addEventListener('DOMContentLoaded', () => {
+  const courseLinks = document.querySelectorAll('.course-link');
+  const certificateIframe = document.getElementById('certificateIframe');
 
-  links.forEach(link => {
-    link.addEventListener('click', function(event) {
-      // Pega a URL do certificado
-      const certificadoUrl = event.target.getAttribute('data-certificado');
-
-      // Atualiza a imagem no modal
-      const modalImage = document.getElementById('certificateImage');
-      modalImage.src = certificadoUrl;
+  courseLinks.forEach(link => {
+    link.addEventListener('click', function () {
+      const pdfUrl = this.getAttribute('data-certificado');
+      certificateIframe.src = pdfUrl; // Atualiza o iframe com o PDF selecionado
     });
+  });
+
+  // Limpar o iframe ao fechar o modal (opcional, para evitar cache)
+  const certificateModal = document.getElementById('certificateModal');
+  certificateModal.addEventListener('hidden.bs.modal', () => {
+    certificateIframe.src = '';
   });
 });

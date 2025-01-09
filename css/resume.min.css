@@ -29,7 +29,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3.5rem
+    font-size: 2.5rem
 }
 
 .subheading {
@@ -239,4 +239,27 @@ card-body {
 /* Exibe a miniatura ao passar o mouse */
 .course-link:hover::after {
   color: #333; /* Cor do texto ao passar o mouse */
+}
+
+.social-links {
+  position: absolute; /* Torna a posição absoluta */
+  top: 60px; /* Alinha no topo da página */
+  right: 100px; /* Alinha no lado direito */
+  text-align: right; /* Alinha o conteúdo à direita */
+  z-index: 10; /* Garante que fique acima de outros elementos */
+}
+
+.social-links ul {
+  list-style-type: none; /* Remove os marcadores */
+  padding: 0; /* Remove o espaçamento interno */
+  margin: 0; /* Remove o espaçamento externo */
+}
+
+.social-links img {
+  margin-bottom: 10px; /* Adiciona espaçamento entre os ícones */
+  transition: transform 0.2s; /* Efeito ao passar o mouse */
+}
+
+.social-links img:hover {
+  transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
 }
