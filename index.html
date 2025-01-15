@@ -22,14 +22,16 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
+
   <!-- Estilos personalizados para este modelo -->
   <link href="css/resume.min.css" rel="stylesheet">
+
 
 </head>
 
 <body id="page-top">
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger mx-3" href="#page-top">
       <span class="d-block d-lg-none">CÉLIO BASILIO</span>
       <span class="d-none d-lg-block">
@@ -140,32 +142,64 @@
         <h2 class="mb-5">Meus Projetos</h2>
         <h3 class="text-black-50">Projetos Acadêmicos Web</h3>
         <div class="row">
-          <!-- Jogo do Sonic JS -->
+          <!-- Site SintProEdu -->
           <div class="col-md-6 mb-5">
             <div class="card">
               <img src="img/Projects/sintproedu.png" class="card-img-top" alt="Imagem do Projeto SintProEdu">
               <div class="card-body">
-                <h5 class="card-title">Site SintProEdu</h5>
-                <p class="card-text read-more">A SintProEdu é uma plataforma projetada para facilitar a comunicação entre
-                  alunos e empresas, com o objetivo de ajudar na elaboração de projetos acadêmicos,
-                  <span class="dots"><a class="read-more-btn">Continuar lendo</a></span><span class="more">
-                    oferecendo soluções para problemas enfrentados pelas empresas. Ela serve como uma ponte entre estudantes
-                    e empresas que desejam resolver questões tecnológicas. O banco de dados da plataforma armazena os cadastros
-                    de empresas e alunos, além de descrever projetos em andamento que podem ser de interesse para ambos.<br>
+                 <div class="container my-5">
 
-                    Especificamente, a SintProEdu ajuda alunos, em diferentes estágios de sua formação universitária, a colocar
-                    em prática as teorias estudadas nas salas de aula, promovendo a interação entre eles e empresas, que têm suas
-                    necessidades tecnológicas atendidas por soluções acadêmicas. O site facilita o acesso dos alunos às demandas do
-                    mercado e oferece uma via para as empresas encontrarem soluções inovadoras para seus desafios, sempre com um
-                    caráter educacional e sem fins comerciais.<br>
+    <!-- Nav Tabs -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <h5 class="nav-link active" id="sintpeoedusobre-tab" data-bs-toggle="tab" data-bs-target="#sintproedusobre" role="tab" aria-controls="about" aria-selected="true">SintProEdu</h5>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tools-tab" data-bs-toggle="tab" data-bs-target="#tools" type="button" role="tab" aria-controls="tools" aria-selected="false">Ferramentas Usadas</button>
+      </li>
+    </ul>
 
-                    A plataforma também garante que os estudantes possam interagir diretamente com as empresas, sem intermediários,
-                    o que facilita o processo de colaboração e desenvolvimento de projetos conjuntos.
-                    <a class="read-less-btn">Recolher</a>
-                  </span>
-                </p>
-                <a href="https://github.com/CelioBasilio/SintProEdu" class="btn btn-primary" target="_blank">Visitar
-                  Projeto</a>
+    <!-- Tab Content -->
+    <div class="tab-content" id="myTabContent">
+      <!-- About Tab -->
+      <div class="tab-pane fade show active" id="sintproedusobre" role="tabpanel" aria-labelledby="sintproedusobre-tab">
+        <p class="card-text read-more mt-3">A SintProEdu é uma plataforma projetada para facilitar a comunicação entre
+          alunos e empresas, com o objetivo de ajudar na elaboração de projetos acadêmicos,
+          <span class="dots"><a class="read-more-btn">Continuar lendo</a></span><span class="more">
+            oferecendo soluções para problemas enfrentados pelas empresas. Ela serve como uma ponte entre estudantes
+            e empresas que desejam resolver questões tecnológicas. O banco de dados da plataforma armazena os cadastros
+            de empresas e alunos, além de descrever projetos em andamento que podem ser de interesse para ambos.<br>
+
+            Especificamente, a SintProEdu ajuda alunos, em diferentes estágios de sua formação universitária, a colocar
+            em prática as teorias estudadas nas salas de aula, promovendo a interação entre eles e empresas, que têm suas
+            necessidades tecnológicas atendidas por soluções acadêmicas. O site facilita o acesso dos alunos às demandas do
+            mercado e oferece uma via para as empresas encontrarem soluções inovadoras para seus desafios, sempre com um
+            caráter educacional e sem fins comerciais.<br>
+
+            A plataforma também garante que os estudantes possam interagir diretamente com as empresas, sem intermediários,
+            o que facilita o processo de colaboração e desenvolvimento de projetos conjuntos.
+            <a class="read-less-btn">Recolher</a>
+          </span>
+        </p>
+        <a href="https://github.com/CelioBasilio/SintProEdu" class="btn btn-primary" target="_blank">Visitar Projeto</a>
+          <a href="https://github.com/CelioBasilio/SintProEdu" class="btn btn-primary" target="_blank">Galeria de Fotos</a>
+      </div>
+
+      <!-- Tools Tab -->
+      <div class="tab-pane fade" id="tools" role="tabpanel" aria-labelledby="tools-tab">
+        <ul class="mt-3">
+            <li>Python</li>
+            <li>DJango</li>
+            <li>SQLite</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Bootstrap</li>
+          <li>JQuery</li>
+        </ul>
+      </div>
+    </div>
+  </div>
               </div>
             </div>
           </div>
@@ -187,10 +221,15 @@
               </div>
             </div>
           </div>
+
+            -->
+
         </div>
       </div>
+
+
     </section>
-    -->
+
 
     <!-- Skills -->
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
@@ -199,6 +238,24 @@
 
         <div class="subheading mb-3">LINGUAGENS &amp; FERRAMENTAS DE PROGRAMAÇÃO</div>
         <ul class="list-inline list-icons">
+          <li class="list-inline-item">
+            <i class="devicon-python-plain-wordmark"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-csharp-plain colored"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-java-plain-wordmark colored"></i>
+          </li>
+           <li class="list-inline-item">
+            <i class="devicon-kotlin-plain-wordmark colored"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-typescript-plain colored"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-django-plain-wordmark colored"></i>
+          </li>
           <li class="list-inline-item">
             <i class="devicon-html5-plain-wordmark colored"></i>
           </li>
@@ -209,16 +266,19 @@
             <i class="devicon-javascript-plain colored"></i>
           </li>
           <li class="list-inline-item">
+            <i class="devicon-bootstrap-plain-wordmark colored"></i>
+          </li>
+          <li class="list-inline-item">
             <i class="devicon-jquery-plain-wordmark colored"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-laravel-plain-wordmark colored"></i>
+            <i class="devicon-firebase-plain-wordmark colored"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-php-plain colored"></i>
+            <i class="devicon-sqlite-plain-wordmark colored"></i>
           </li>
           <li class="list-inline-item">
-            <i class="devicon-bootstrap-plain-wordmark colored"></i>
+            <i class="devicon-microsoftsqlserver-plain-wordmark colored"></i>
           </li>
           <li class="list-inline-item">
             <i class="devicon-mysql-plain-wordmark colored"></i>
@@ -229,12 +289,6 @@
           <li class="list-inline-item">
             <a href="https://github.com/CelioBasilio" target="_blank" rel="noopener noreferrer">
               <i class="devicon-github-original-wordmark colored"></i></a>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicon-python-plain-wordmark colored"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicon-django-plain-wordmark colored"></i>
           </li>
         </ul>
       </div>
@@ -470,6 +524,22 @@
 
   </div>
 
+  <div id="visit-counter">Visitas: 0</div>
+<script>
+    // Obtém o contador do localStorage
+    let visitCount = localStorage.getItem('visitCount');
+
+    // Incrementa o contador
+    visitCount = visitCount ? parseInt(visitCount) + 1 : 1;
+
+    // Salva o novo valor no localStorage
+    localStorage.setItem('visitCount', visitCount);
+
+    // Exibe o contador na página
+    document.getElementById('visit-counter').innerText = `Visitas: ${visitCount}`;
+</script>
+
+
 
 
   <!-- Bootstrap JavaScript -->
@@ -485,9 +555,6 @@
   <!--  Scripts personalizados para este modelo  -->
   <script src="js/resume.js"></script>
   <script src="js/readmore.js"></script>
-
-
-</div>
 
 </body>
 
