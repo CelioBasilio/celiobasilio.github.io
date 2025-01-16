@@ -75,9 +75,17 @@ const projectImages = {
     "./img/galeria/sintproedu/mensagensenviadas.png",
 
   ],
-  projeto2: [
-    "./img/projeto2/img1.jpg",
-    "./img/projeto2/img2.jpg",
+  detectco: [
+    "./img/galeria/detectco/telalogin.jpg",
+   "./img/galeria/detectco/telacadastro.jpg",
+   "./img/galeria/detectco/manometro01.jpg",
+   "./img/galeria/detectco/manometro05.jpg",
+   "./img/galeria/detectco/manometro06.jpg",
+   "./img/galeria/detectco/manometro10.jpg",
+   "./img/galeria/detectco/manometro11.jpg",
+   "./img/galeria/detectco/manometro35.jpg",
+   "./img/galeria/detectco/prototipo01.png",
+   "./img/galeria/detectco/prototipo02.png",
   ],
   projeto3: [
     "./img/projeto3/img1.jpg",
