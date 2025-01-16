@@ -185,7 +185,7 @@
           </span>
         </p>
         <a href="https://github.com/CelioBasilio/SintProEdu" class="btn btn-primary" target="_blank">Visitar Projeto</a>
-          <a href="https://github.com/CelioBasilio/SintProEdu" class="btn btn-primary" target="_blank">Galeria de Fotos</a>
+          <button class="btn btn-outline-secondary open-gallery" data-project="sintproedu">Ver Galeria</button>
       </div>
 
       <!-- Tools Tab -->
@@ -503,7 +503,18 @@
   </div>
 </section>
 
-<!-- Modal -->
+ <!-- Modal galeria -->
+  <div class="modal-gallery" id="galleryModal">
+    <span class="close-gallery" id="closeGallery">&times;</span>
+    <span class="prev-gallery" id="prevGallery">&#10094;</span>
+    <div class="modal-gallery-content">
+      <img id="galleryImg" src="" alt="Imagem da Galeria">
+    </div>
+    <span class="next-gallery" id="nextGallery">&#10095;</span>
+  </div>
+
+
+<!-- Modal Certificado -->
 <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">

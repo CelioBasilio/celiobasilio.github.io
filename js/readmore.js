@@ -55,3 +55,81 @@ document.addEventListener('DOMContentLoaded', () => {
     certificateIframe.src = '';
   });
 });
+
+
+const projectImages = {
+  sintproedu: [
+    "./img/galeria/sintproedu/home.png",
+    "./img/galeria/sintproedu/sobre.png",
+    "./img/galeria/sintproedu/login.png",
+    "./img/galeria/sintproedu/cadastro.png",
+    "./img/galeria/sintproedu/cadastroempresa.png",
+    "./img/galeria/sintproedu/projetosempresa.png",
+    "./img/galeria/sintproedu/projetocadastro.png",
+    "./img/galeria/sintproedu/projetoedite.png",
+    "./img/galeria/sintproedu/projetoexcluir.png",
+    "./img/galeria/sintproedu/mensagensempresa.png",
+    "./img/galeria/sintproedu/cadastroaluno.png",
+    "./img/galeria/sintproedu/projetosaluno.png",
+    "./img/galeria/sintproedu/mensagensenviar.png",
+    "./img/galeria/sintproedu/mensagensenviadas.png",
+
+  ],
+  projeto2: [
+    "./img/projeto2/img1.jpg",
+    "./img/projeto2/img2.jpg",
+  ],
+  projeto3: [
+    "./img/projeto3/img1.jpg",
+    "./img/projeto3/img2.jpg",
+  ],
+};
+
+let currentGalleryImages = [];
+let currentGalleryIndex = 0;
+
+const galleryModal = document.getElementById('galleryModal');
+const galleryImg = document.getElementById('galleryImg');
+const closeGalleryBtn = document.getElementById('closeGallery');
+const prevGalleryBtn = document.getElementById('prevGallery');
+const nextGalleryBtn = document.getElementById('nextGallery');
+const openGalleryButtons = document.querySelectorAll('.open-gallery');
+
+const updateGalleryImage = () => {
+  galleryImg.src = currentGalleryImages[currentGalleryIndex];
+};
+
+// Abrir modal da galeria
+openGalleryButtons.forEach(button => {
+  button.addEventListener('click', (e) => {
+    const projectKey = e.target.getAttribute('data-project');
+    currentGalleryImages = projectImages[projectKey];
+    currentGalleryIndex = 0;
+    updateGalleryImage();
+    galleryModal.style.display = 'flex';
+  });
+});
+
+// Fechar modal da galeria
+closeGalleryBtn.addEventListener('click', () => {
+  galleryModal.style.display = 'none';
+});
+
+// Navegar para a imagem anterior
+prevGalleryBtn.addEventListener('click', () => {
+  currentGalleryIndex = (currentGalleryIndex - 1 + currentGalleryImages.length) % currentGalleryImages.length;
+  updateGalleryImage();
+});
+
+// Navegar para a próxima imagem
+nextGalleryBtn.addEventListener('click', () => {
+  currentGalleryIndex = (currentGalleryIndex + 1) % currentGalleryImages.length;
+  updateGalleryImage();
+});
+
+// Fechar modal ao clicar fora da imagem
+galleryModal.addEventListener('click', (e) => {
+  if (e.target === galleryModal) {
+    galleryModal.style.display = 'none';
+  }
+});
