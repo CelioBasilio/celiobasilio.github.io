@@ -126,10 +126,3 @@ nextGalleryBtn.addEventListener('click', () => {
   currentGalleryIndex = (currentGalleryIndex + 1) % currentGalleryImages.length;
   updateGalleryImage();
 });
-
-// Fechar modal ao clicar fora da imagem
-galleryModal.addEventListener('click', (e) => {
-  if (e.target === galleryModal) {
-    galleryModal.style.display = 'none';
-  }
-});
